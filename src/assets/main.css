@@ -1,0 +1,88 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #1f1f1f;
+    color: #fafafa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.counter-view {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: #fafafa;
+    color: #1f1f1f;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    flex-basis: 85%;
+    max-width: 85%;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+button {
+    background-color: #1f1f1f;
+    color: #fafafa;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        cursor: pointer;
+        background-color: #CCC;
+        color: #1f1f1f;
+    }
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem;
+
+    a {
+        text-decoration: none;
+        transition: color 0.3s ease;
+        background-color: #333;
+        color: #fafafa;
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+
+        &:hover {
+            color: #fff;
+            background-color: #444;
+            cursor: pointer;
+        }
+    }
+
+    a.router-link-active {
+        background-color: rgb(104, 37, 219);
+        color: #fff;
+    }
+}
